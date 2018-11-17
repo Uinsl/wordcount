@@ -22,4 +22,5 @@ urlpatterns = [
     path('', function.home),
     #这里的逻辑关系是 home 的 from count 跳转到这个www.count/ 才执行 function.count1
     path('count/', function.count1),
+    path('about/', function.about),
 ]

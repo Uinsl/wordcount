@@ -18,3 +18,7 @@ def count1(request):
     sorted_dict=sorted(word_dict.items(),key=lambda w:w[1],reverse=True) #w:w[1] w[0][1] 选择w[1]去排序
     return render(request,'count.html',
                   {'total': total_count,'text': user_text,'word':word_dict,'sorted': sorted_dict})
+
+def about(request):
+    #return HttpResponse("hlleo!")
+    return render(request,'about.html')
